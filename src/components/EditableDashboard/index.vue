@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 grid-container ">
+  <div class="h-screen p-4 grid-container bg-custom-midnight-2">
     <div class="p-4 flex justify-end gap-1">
       <button @click="toggleEditMode" class="mb-4 px-4 py-2 bg-blue-500 text-white rounded">
         {{ editMode ? 'Disable Edit Mode' : 'Enable Edit Mode' }}
@@ -30,7 +30,7 @@ const grid = ref(null);
 
 onMounted(() => {
   const gs = GridStack.init({
-    // column: 4,
+    minColumn: 4,
     cellHeight: '100px',
     minRow: 1,
     margin: '10px',
@@ -122,9 +122,5 @@ const removeWidget = (id) => {
 .grid-container {
   border-style: solid;
   border-width: 0;
-  background-color: #0e1423;
-}
-.grid-widget-item {
-  background-color: #172133!important;
 }
 </style>

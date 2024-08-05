@@ -10,6 +10,7 @@ module.exports = {
       },
       colors: {
         'custom-midnight': '#0f172a', 
+        'custom-midnight-2': '#0e1423',
       },
     },
   },
