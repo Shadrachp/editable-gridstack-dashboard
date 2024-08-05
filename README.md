@@ -1,7 +1,6 @@
 # editable-gridstack-dashboard
 
 - An editable dashboard built in vue.
-- 
 
 ## Project Setup
 
